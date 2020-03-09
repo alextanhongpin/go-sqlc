@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS profiles (
+	id UUID NOT NULL DEFAULT uuid_generate_v1(),
+	name TEXT NOT NULL DEFAULT '',
+	created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT current_timestamp,
+	updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT current_timestamp,
+	deleted_at TIMESTAMP WITH TIME ZONE NULL,
+	PRIMARY KEY (id)
+);
